@@ -1,0 +1,4 @@
+gcc -fPIC -c rwlib.c -o rwlib.o
+gcc -shared -o rwlib.so rwlib.o -lrt
+g++ lab5.c -o lab5 -pthread -ldl -lrt
+./lab5
